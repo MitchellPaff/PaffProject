@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddAzureClients(x =>
 {
-    x.AddBlobServiceClient(new Uri("https://<account-name>.blob.core.windows.net"));
+    x.AddBlobServiceClient(new Uri("https://paffstorageaccount.blob.core.windows.net"));
     x.UseCredential(new DefaultAzureCredential());
 });
 
